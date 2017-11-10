@@ -1,6 +1,5 @@
 import unittest
-from main import robot
-
+from fizzbuzz import robot
 
 class FizzbuzzTest(unittest.TestCase):
 
@@ -48,3 +47,6 @@ class FizzbuzzTest(unittest.TestCase):
 
     def test_say_fizzbuzz_when_15(self):
         self.assertEqual(robot(15), 'fizzbuzz')
+
+if __name__ == "__main__":
+    unittest.main()
